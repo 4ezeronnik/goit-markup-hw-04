@@ -1,0 +1,392 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-color: #f5f4fa;
+}
+
+/* General */
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+/* Links */
+.site-nav .link {
+  display: block;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+/* Auth-nav  */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+.auth-nav .link {
+  display: block;
+  font-family: Roboto;
+  font-weight: 500px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 2%;
+}
+
+/* Main nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-height: 80px;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+/* Logo */
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo:hover {
+  color: var(--accent-color);
+}
+
+.logo-header {
+  color: var(--title-text-color);
+}
+
+.logo-footer {
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+.logo-address-footer {
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button-filter {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--secondary-color);
+  padding: 6px 22px;
+  align-items: center;
+}
+
+.button-filter:focus,
+.button-filter:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.button-studio {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  padding: 10px 32px;
+  min-width: 200px;
+}
+
+/* Sections */
+
+.border-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+  background-color: #2f303a;
+  font-weight: 900;
+  font-size: 44px;
+  text-align: center;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin-bottom: 26.43px;
+}
+
+.hero.section {
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.secondary-title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+/* Section specific */
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Особенности */
+.specific-element-title {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.specific-container {
+  display: flex;
+}
+
+.style-specific {
+  width: 270px;
+}
+
+.specific-container .style-specific + .style-specific {
+  margin-left: 30px;
+}
+
+.specific-element-paragraph {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Чем мы занимаемся */
+.secondary-container {
+  display: flex;
+}
+
+.item-secondary {
+  width: 370;
+}
+
+.secondary-container .item-secondary + .item-secondary {
+  margin-left: 30px;
+}
+
+/* Наша команда */
+.team-container {
+  display: flex;
+}
+
+.team-container .item-team + .item-team {
+  margin-left: 30px;
+}
+
+.team-element-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.team-description {
+  line-height: 1.2;
+  text-align: center;
+}
+
+.team.section {
+  background-color: #f5f4fa;
+}
+
+.item-team {
+  background-color: var(--primary-white-color);
+  padding-bottom: 30px;
+}
+
+/* Works Portfolio */
+
+.works.container {
+  margin-top: 94px;
+  margin-bottom: 94px;
+  align-items: center;
+}
+
+.works-element {
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.works-paragraph {
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 1.9;
+  padding-left: 24px;
+  margin-bottom: 12px;
+}
+
+.work-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 94px;
+}
+
+.work-container .work-item + .work-item {
+  margin-left: 8px;
+}
+
+.work-item {
+  font-family: Roboto, sans-serif;
+}
+
+/* Card set */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.item-card {
+  margin-left: 30px;
+  margin-top: 30px;
+  border-bottom: 1px solid #eeeeee;
+  min-height: 404px;
+}
+
+.item-card:nth-child(-n + 3) {
+  margin-top: 0;
+}
+
+.item-card:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+/* Футер */
+.address {
+  font-style: normal;
+  text-decoration: none;
+}
+
+.address-map {
+  color: var(--primary-white-color);
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+.address-contact {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address-contact-mail {
+  margin-bottom: 9px;
+  text-decoration: none;
+}
+
+.address-contact-map {
+  margin-bottom: 9px;
+  text-decoration: none;
+}
+
+.footer-background {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-section {
+  background-color: #2f303a;
+}
+.footer-nav .link {
+  display: block;
+  font-family: Roboto;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 2%;
+}
