@@ -60,13 +60,15 @@ ul {
 .auth-nav {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .auth-nav .item + .item {
   margin-left: 50px;
 }
 .auth-nav .link {
-  display: block;
+  display: flex;
+  align-items: center;
   font-family: Roboto;
   font-weight: 500px;
   font-size: 14px;
@@ -169,6 +171,16 @@ ul {
 
 .border-header {
   border-bottom: 1px solid #ececec;
+}
+
+.header-contact-icons {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-contacts-item > .link:hover {
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .hero-title {
