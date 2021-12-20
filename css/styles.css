@@ -247,6 +247,10 @@ ul {
   line-height: 1.7;
 }
 
+.specific-icons {
+  margin-bottom: 30px;
+}
+
 /* Чем мы занимаемся */
 .secondary-container {
   display: flex;
