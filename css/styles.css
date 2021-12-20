@@ -333,6 +333,29 @@ ul {
   border-radius: 50px;
 }
 
+/* Постоянные клиенты */
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  fill: #afb1b8;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
 /* Works Portfolio */
 
 .works.container {
