@@ -352,6 +352,10 @@ ul {
   height: 92px;
 }
 
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .clients-link {
   display: flex;
   justify-content: center;
@@ -362,6 +366,12 @@ ul {
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 /* Works Portfolio */
