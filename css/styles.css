@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --secondary-color: #f5f4fa;
+  --background-color: #f5f4fa;
 }
 
 /* General */
@@ -233,7 +234,18 @@ ul {
 }
 
 .style-specific {
+  margin-bottom: 30px;
+}
+
+.style-specific-object {
+  display: flex;
   width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: var(--background-color);
+  border-radius: 4px;
 }
 
 .specific-container .style-specific + .style-specific {
@@ -245,10 +257,6 @@ ul {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.7;
-}
-
-.specific-icons {
-  margin-bottom: 30px;
 }
 
 /* Чем мы занимаемся */
